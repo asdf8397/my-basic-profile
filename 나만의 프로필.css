@@ -1,0 +1,72 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+* {
+    font-family: "Pretendard",serif;
+}
+
+body {
+    background-color: #44398A;
+}
+.profile {
+    width: 100px;
+    height: 100px;
+    /*background-color: green;*/ /* 배경색상은 구분선을 넣기전에 어디에 있는지 확인하기 위해서 색상을 넣어준다 background-color로서 */
+
+    border-radius: 100%;
+    border: 2px solid white;
+
+    background-image: url("김동영1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.main {
+    color: white;
+    font-size: 20px;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+.sub {
+    color: white;
+    font-size: 17px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.wrap { /* 현재 상태 르탄이를 감싸는 wrap의 상자를 center로 보내고 싶으면 상자를 왼쪽으로 밀면 왼쪽으로 가고 오른쪽으로 밀면 오른쪽으로 간다 그때는 양쪽으로 밀면 center로 간다. */
+    /*background-color: green;*/
+    width: 300px;
+    margin: 30px auto 0px auto; /* top으로 30px밀고 오른쪽으로 auto bottom을 0px 왼쪽으로 auto */
+
+    /*flex 가로정렬, column 세로정렬*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrap > a {
+    width: 300px;
+    height: 50px;
+
+    background-color: white;
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: bold; /* bold는 굵기: 굵게*/
+    color: #44398A;
+
+    /*내용물을 가운데로 오게 만들기*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none; /* 글자의 밑줄 없애기 text-decoration: none */
+
+    box-shadow: 3px 3px 5px 0px black; /* 넣어준 box에 그림자를 넣어줄때 */
+}
+.wrap > a:hover {
+    background-color: #d2d2d2;
+}
